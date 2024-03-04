@@ -28,8 +28,8 @@ class _SignInScreenState extends State<SignInScreen> {
       print(e.message);
       if (e.code == 'invalid-email') {
         _showMyDialog('No user found for that email.');
-      } else if (e.code == 'INVALID_LOGIN_CREDENTIALS') {
-        _showMyDialog('Wrong password provided for that user.');
+      } else if (e.code == 'invalid-credential') {
+        _showMyDialog('Wrong password  or Email provided for that user.');
       }
     }
   }
